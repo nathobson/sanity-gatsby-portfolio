@@ -1,1 +1,1 @@
-# sanity-gatsby-portfolio-web
+# gatsby-portfolio-preview-poc-web

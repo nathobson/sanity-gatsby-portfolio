@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Sanity previews"
-  },
   "api": {
     "projectId": "jymzwfxg",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Gatsby Portfolio Preview POC"
   },
   "plugins": [
     "@sanity/base",
@@ -16,7 +16,10 @@
     "@sanity/desk-tool",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
-    "dashboard-widget-netlify"
+    "dashboard-widget-netlify",
+    "sanity-plugin-url-metadata-input",
+    "asset-source-unsplash",
+    "@sanity/vision"
   ],
   "parts": [
     {
@@ -25,11 +28,11 @@
     },
     {
       "name": "part:@sanity/desk-tool/structure",
-      "path": "./deskStructure.js"
+      "path": "./src/deskStructure/index.js"
     },
     {
       "implements": "part:@sanity/dashboard/config",
-      "path": "./dashboardConfig.js"
+      "path": "./src/dashboardConfig.js"
     }
   ]
 }
